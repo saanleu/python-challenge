@@ -58,18 +58,18 @@ with open(election__csv, encoding ="utf-8") as csv_file:
 
 
 
-    election_file = os.path.join("..","analysis", "election_results.txt")
+    election_file = os.path.join(r'C:\Users\Sarah\OneDrive\Desktop\BCamp\homeworks\python-challenge\PyPoll\analysis', "election_results.txt")
     el_out = (
         f"Election Results\n"
         f"-------------------------\n"
         f"Total Votes: {totalVotes}\n"
         f"-------------------------\n"
-        f'{printout(candiVotes)}\n'
+        f'{printout(candiVotes)}'
         f"-------------------------\n"
         f"Winner: {chickendinner(candiVotes)}\n"
         f"-------------------------\n"
 
     )
     print(el_out)
-#    with open(election_file, "w") as txt_file:
-#        txt_file.write(el_out)
+    with open(election_file, "w") as txt_file:
+        txt_file.write(el_out)
