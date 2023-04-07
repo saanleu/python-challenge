@@ -1,7 +1,7 @@
 import os
 import csv
 
-election__csv = os.path.join(r"C:\Users\Sarah\OneDrive\Desktop\BCamp\homeworks\python-challenge\PyPoll\Resources","election_data.csv")
+election__csv = os.path.join("..","Resources","election_data.csv")
 
 with open(election__csv, encoding ="utf-8") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
@@ -58,7 +58,7 @@ with open(election__csv, encoding ="utf-8") as csv_file:
 
 
 
-    election_file = os.path.join(r'C:\Users\Sarah\OneDrive\Desktop\BCamp\homeworks\python-challenge\PyPoll\analysis', "election_results.txt")
+    election_file = os.path.join("..","analysis","election_results.txt")
     el_out = (
         f"Election Results\n"
         f"-------------------------\n"
